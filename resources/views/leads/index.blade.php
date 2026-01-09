@@ -86,7 +86,7 @@
                             <td>{{ $lead->full_name }}</td>
                             <td>{{ $lead->phone }}</td>
                             <td>{{ $lead->status->getLabel() }}</td>
-                            <td>{{ $lead->assigned_to }}</td>
+                            <td>{{ $lead->user->name }}</td>
                             <td>{{ $lead->created_at }}</td>
                             <td>
                                 <a href="{{ route('leads.edit', $lead->id) }}" >

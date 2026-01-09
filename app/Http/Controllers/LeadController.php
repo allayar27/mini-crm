@@ -58,6 +58,7 @@ class LeadController extends Controller
 
     public function edit(Lead $lead)
     {
+        $this->authorize('view', $lead);
         return view('leads.edit', compact('lead'));
     }
 
